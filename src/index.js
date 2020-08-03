@@ -10,7 +10,7 @@ const install = require('./install');
 
 const run = async () => {
   checkEnvironment();
-  #configureEnvironment();
+  //configureEnvironment();
   const inputs = loadInputs();
   const downloadedFile = await download(inputs);
   await install(downloadedFile, inputs);
